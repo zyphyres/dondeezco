@@ -149,9 +149,9 @@ export default function AllRooms() {
                          room.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = categoryFilter === 'all' || room.category === categoryFilter;
     const matchesPrice = priceFilter === 'all' || 
-                        (priceFilter === 'low' && room.price < 15000) ||
-                        (priceFilter === 'mid' && room.price >= 15000 && room.price < 30000) ||
-                        (priceFilter === 'high' && room.price >= 30000);
+                        (priceFilter === 'low' && room.price < 3000) ||
+                        (priceFilter === 'mid' && room.price >= 3000 && room.price < 4500) ||
+                        (priceFilter === 'high' && room.price >= 4500);
     
     return matchesSearch && matchesCategory && matchesPrice;
   });
@@ -207,9 +207,9 @@ export default function AllRooms() {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">All Prices</SelectItem>
-                  <SelectItem value="low">Under ₱15,000</SelectItem>
-                  <SelectItem value="mid">₱15,000 - ₱30,000</SelectItem>
-                  <SelectItem value="high">Above ₱30,000</SelectItem>
+                  <SelectItem value="low">Under ₱3,000</SelectItem>
+                  <SelectItem value="mid">₱3,000 - ₱4,500</SelectItem>
+                  <SelectItem value="high">Above ₱4,500</SelectItem>
                 </SelectContent>
               </Select>
             </div>
