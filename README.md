@@ -1,6 +1,6 @@
-# Shadcn-UI Template Usage Instructions
+# DONDEEZCO Beach Resort | Since 1985 - The longest shoreline in Siquijor Island
 
-## technology stack
+## Technology stack
 
 This project is built with:
 
