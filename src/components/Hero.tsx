@@ -52,12 +52,12 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">
-          <Button size="lg" className="bg-[#ec9909] hover:bg-[#d88708] text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl">
+          <Button size="lg" style={{ width: "230px"}} className="bg-[#ec9909] w hover:bg-[#d88708] text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl">
             <Calendar className="mr-2" size={20} />
             Book Your Stay
           </Button>
           
-          <Button size="lg" variant="outline" className="border-2 border-[#ec9909] text-[#ec9909] hover:bg-[#ec9909] hover:text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
+          <Button size="lg" style={{ width: "230px"}} variant="outline" className="border-2 border-[#ec9909] text-[#ec9909] hover:bg-[#ec9909] hover:text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
             Explore Resort
           </Button>
         </div>
@@ -66,7 +66,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-[#fff]/100 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-[#fff]/100 rounded-full mt-2 animate-pulse"></div>
         </div>
