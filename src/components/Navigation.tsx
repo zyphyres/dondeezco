@@ -20,7 +20,7 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link to="/" className="text-[#252627] hover:text-[#ec9909] transition-colors duration-300 font-medium">
+              <Link to="/#" className="text-[#252627] hover:text-[#ec9909] transition-colors duration-300 font-medium">
                 Home
               </Link>
               <Link to="/allrooms" className="text-[#252627] hover:text-[#ec9909] transition-colors duration-300 font-medium">

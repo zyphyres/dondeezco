@@ -9,91 +9,134 @@ import { Users, Bed, Bath, Search, Filter, Star } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
+
 const allRooms = [
   {
     id: 1,
-    name: 'Ocean View Suite',
-    slug: 'ocean-view-suite',
-    price: 14950, // ₱299 * 50 (approximate PHP rate)
-    image: 'bg-gradient-to-br from-[#ffebd6] to-[#f5d5a8]',
+    name: 'Shoreline Room No.1',
+    slug: 'shoreline-room-no-1',
+    price: 3600, // ₱299 * 50 (approximate PHP rate)
+    image: `bg-[url('/shoreline/1.jpg')] bg-cover bg-center`,
     guests: 2,
     beds: '1 King Bed',
     baths: 1,
     size: '45 sqm',
-    features: ['Ocean View', 'Balcony', 'WiFi', 'Mini Bar'],
-    description: 'Luxurious suite with panoramic ocean views and private balcony',
-    category: 'suite'
+    features: ['Ocean View', 'Free Breakfast', 'WiFi', 'Parking'],
+    description: 'Luxurious room with ocean views and modern amenities',
+    category: 'shoreline room'
   },
   {
     id: 2,
-    name: 'Beach Villa',
-    slug: 'beach-villa',
-    price: 29950,
-    image: 'bg-gradient-to-br from-[#f5d5a8] to-[#ffebd6]',
-    guests: 4,
-    beds: '2 King Beds',
+    name: 'Family Room No.1',
+    slug: 'family-room-no-1',
+    price: 6600,
+    image: `bg-[url('/family/1.jpg')] bg-cover bg-center`,
+    guests: 6,
+    beds: '3 King Beds',
     baths: 2,
     size: '120 sqm',
-    features: ['Private Beach', 'Pool', 'Kitchen', 'Garden'],
-    description: 'Exclusive villa with direct beach access and private pool',
-    category: 'villa'
+    features: ['Parking', 'Pool', 'Kitchen', 'Beach Access'],
+    description: 'Exclusive family room with direct beach access and private pool',
+    category: 'family room'
   },
   {
     id: 3,
-    name: 'Deluxe Room',
-    slug: 'deluxe-room',
-    price: 9950,
-    image: 'bg-gradient-to-br from-[#ffebd6] via-[#f5d5a8] to-[#ffebd6]',
+    name: 'Deluxe Room No.1',
+    slug: 'deluxe-room-no-1',
+    price: 3400,
+    image: `bg-[url('/deluxe/1.jpg')] bg-cover bg-center`,
     guests: 2,
     beds: '1 Queen Bed',
     baths: 1,
     size: '35 sqm',
-    features: ['Garden View', 'WiFi', 'Coffee', 'AC'],
-    description: 'Comfortable room with modern amenities and garden views',
-    category: 'room'
+    features: ['Kitchenette', 'WiFi', 'Coffee', 'AC'],
+    description: 'Comfortable exclusive room with modern amenities and kitchenette',
+    category: 'deluxe room'
   },
   {
     id: 4,
-    name: 'Presidential Suite',
-    slug: 'presidential-suite',
-    price: 49950,
-    image: 'bg-gradient-to-br from-[#f5d5a8] via-[#ffebd6] to-[#f5d5a8]',
-    guests: 6,
-    beds: '3 King Beds',
-    baths: 3,
-    size: '200 sqm',
-    features: ['Panoramic View', 'Private Pool', 'Butler Service', 'Jacuzzi'],
-    description: 'Ultimate luxury with private pool and dedicated butler service',
-    category: 'suite'
+    name: 'Shoreline Room No.2',
+    slug: 'shoreline-room-no-2',
+    price: 3600,
+    image: `bg-[url('/shoreline/2.jpg')] bg-cover bg-center`,
+    guests: 2,
+    beds: '1 King Bed',
+    baths: 1,
+    size: '50 sqm',
+    features: ['Ocean View', 'Free Breakfast', 'WiFi', 'Parking'],
+    description: 'Spacious room with stunning ocean views and modern amenities',
+    category: 'shoreline room'
   },
   {
     id: 5,
-    name: 'Family Room',
-    slug: 'family-room',
-    price: 19950,
-    image: 'bg-gradient-to-br from-[#ffebd6] to-[#f5d5a8]',
-    guests: 4,
-    beds: '2 Queen Beds',
+    name: 'Family Room No.2',
+    slug: 'family-room-no-2',
+    price: 6600,
+    image: `bg-[url('/family/4.jpg')] bg-cover bg-center`,
+    guests: 6,
+    beds: '3 King Beds',
     baths: 2,
-    size: '60 sqm',
-    features: ['Connecting Rooms', 'Kids Area', 'WiFi', 'Kitchenette'],
-    description: 'Perfect for families with connecting rooms and kids area',
-    category: 'room'
+    size: '130 sqm',
+    features: ['Parking', 'Pool', 'Kitchen', 'Beach Access'],
+    description: 'Spacious family room with direct beach access and private pool',
+    category: 'family room'
   },
   {
     id: 6,
-    name: 'Honeymoon Suite',
-    slug: 'honeymoon-suite',
-    price: 24950,
-    image: 'bg-gradient-to-br from-[#f5d5a8] to-[#ffebd6]',
+    name: 'Deluxe Room No.2',
+    slug: 'deluxe-room-no-2',
+    price: 3400,
+    image: `bg-[url('/deluxe/2.jpg')] bg-cover bg-center`,
+    guests: 2,
+    beds: '1 Queen Bed',
+    baths: 1,
+    size: '40 sqm',
+    features: ['Kitchenette', 'WiFi', 'Coffee', 'AC'],
+    description: 'Modern deluxe room with all essential amenities and kitchenette',
+    category: 'deluxe room'
+  },
+  {
+    id: 7,
+    name: 'Shoreline Room No.3',
+    slug: 'shoreline-room-no-3',
+    price: 3600,
+    image: `bg-[url('/shoreline/3.jpg')] bg-cover bg-center`,
     guests: 2,
     beds: '1 King Bed',
     baths: 1,
     size: '55 sqm',
-    features: ['Romantic Decor', 'Jacuzzi', 'Champagne', 'Rose Petals'],
-    description: 'Romantic suite perfect for couples and special occasions',
-    category: 'suite'
-  }
+    features: ['Ocean View', 'Free Breakfast', 'WiFi', 'Parking'],
+    description: 'Elegant room with panoramic ocean views and modern amenities',
+    category: 'shoreline room'
+  },
+  {
+    id: 8,
+    name: 'Family Room No.3',
+    slug: 'family-room-no-3',
+    price: 6600,
+    image: `bg-[url('/family/3.jpg')] bg-cover bg-center`,
+    guests: 6,
+    beds: '3 King Beds',
+    baths: 2,
+    size: '140 sqm',
+    features: ['Parking', 'Pool', 'Kitchen', 'Beach Access'],
+    description: 'Luxurious family room with direct beach access and private pool',
+    category: 'family room'
+  },
+  {
+    id: 9,
+    name: 'Deluxe Room No.3',
+    slug: 'deluxe-room-no-3',
+    price: 3400,
+    image: `bg-[url('/deluxe/6.jpg')] bg-cover bg-center`,
+    guests: 2,
+    beds: '1 Queen Bed',
+    baths: 1,
+    size: '45 sqm',
+    features: ['Kitchenette', 'WiFi', 'Coffee', 'AC'],
+    description: 'Stylish deluxe room with modern amenities and kitchenette',
+    category: 'deluxe room'
+  } 
 ];
 
 export default function AllRooms() {
@@ -125,7 +168,7 @@ export default function AllRooms() {
               All <span className="text-[#ec9909]">Accommodations</span>
             </h1>
             <p className="text-xl text-[#252627]/70 max-w-3xl mx-auto">
-              Discover our complete collection of luxury rooms, suites, and villas
+              Discover our complete collection of luxury rooms, pools, and beach shoreline
             </p>
           </div>
         </div>
@@ -152,9 +195,9 @@ export default function AllRooms() {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">All Categories</SelectItem>
-                  <SelectItem value="room">Rooms</SelectItem>
-                  <SelectItem value="suite">Suites</SelectItem>
-                  <SelectItem value="villa">Villas</SelectItem>
+                  <SelectItem value="shoreline room">Shoreline Rooms</SelectItem>
+                  <SelectItem value="family room">Family Rooms</SelectItem>
+                  <SelectItem value="deluxe room">Deluxe Rooms</SelectItem>
                 </SelectContent>
               </Select>
 
@@ -197,7 +240,7 @@ export default function AllRooms() {
                       {room.category}
                     </Badge>
                   </div>
-                  <div className="absolute bottom-4 left-4 text-[#252627]">
+                  <div className="absolute bottom-4 left-4 text-[#fff]">
                     <h3 className="text-xl font-bold mb-1">{room.name}</h3>
                     <div className="flex items-center space-x-1">
                       {[...Array(5)].map((_, i) => (

@@ -11,17 +11,20 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 const roomsData = {
-  'ocean-view-suite': { name: 'Ocean View Suite', price: 14950, guests: 2 },
-  'beach-villa': { name: 'Beach Villa', price: 29950, guests: 4 },
-  'deluxe-room': { name: 'Deluxe Room', price: 9950, guests: 2 },
-  'presidential-suite': { name: 'Presidential Suite', price: 49950, guests: 6 },
-  'family-room': { name: 'Family Room', price: 19950, guests: 4 },
-  'honeymoon-suite': { name: 'Honeymoon Suite', price: 24950, guests: 2 }
+  'shoreline-room-no-1': { name: 'Shoreline Room No.1', price: 3600, guests: 2 },
+  'family-room-no-1': { name: 'Family Room No.1', price: 6600, guests: 4 },
+  'deluxe-room-no-1': { name: 'Deluxe Room No.1', price: 3400, guests: 2 },
+  'shoreline-room-no-2': {  name: 'Shoreline Room No.2', price: 3600, guests: 2 },
+  'family-room-no-2': { name: 'Family Room No.2', price: 6600, guests: 4 },
+  'deluxe-room-no-2': { name: 'Deluxe Room No.2', price: 3400, guests: 2 },
+  'shoreline-room-no-3': {  name: 'Shoreline Room No.3', price: 3600, guests: 2 },
+  'family-room-no-3': { name: 'Family Room No.3', price: 6600, guests: 4 },
+  'deluxe-room-no-3': { name: 'Deluxe Room No.3', price: 3400, guests: 2 },
 };
 
 export default function Payment() {
   const [searchParams] = useSearchParams();
-  const roomSlug = searchParams.get('room') || 'ocean-view-suite';
+  const roomSlug = searchParams.get('room') || 'shoreline-room-no-1';
   const room = roomsData[roomSlug as keyof typeof roomsData];
   
   const [checkIn, setCheckIn] = useState('');

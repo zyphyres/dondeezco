@@ -151,9 +151,10 @@ export default function Contact() {
                   <div className="h-64 bg-gradient-to-br from-[#ffebd6] to-[#f5d5a8] rounded-lg relative overflow-hidden">
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center">
-                        <MapPin className="w-16 h-16 text-[#ec9909] mx-auto mb-4" />
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3512.705310720795!2d123.49126800019033!3d9.214537401784767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab159f642d63d9%3A0xf876e7c7d3305c52!2sDondeezco%20Beach%20Club%20%26%20Resort!5e1!3m2!1sen!2sph!4v1756703398056!5m2!1sen!2sph" width="600" height="450" style={{border:'1'}} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        {/* <MapPin className="w-16 h-16 text-[#ec9909] mx-auto mb-4" />
                         <h3 className="text-xl font-bold text-[#252627] mb-2">DONDEEZCO Beach Resort</h3>
-                        <p className="text-[#252627]/70">Interactive Map Coming Soon</p>
+                        <p className="text-[#252627]/70">Interactive Map Coming Soon</p> */}
                       </div>
                     </div>
                   </div>

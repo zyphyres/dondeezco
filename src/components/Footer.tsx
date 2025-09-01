@@ -49,13 +49,13 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-[#ec9909] mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">123 Paradise Beach Drive</p>
-                  <p className="text-gray-300">Tropical Island, TI 12345</p>
+                  <p className="text-gray-300">Barangay Dumanhug</p>
+                  <p className="text-gray-300"> Siquijor Island, Siquijor, Philippines</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-[#ec9909] flex-shrink-0" />
-                <p className="text-gray-300">+1 (555) 123-4567</p>
+                <p className="text-gray-300">+63 (912) 123-4567</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-[#ec9909] flex-shrink-0" />

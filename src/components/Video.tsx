@@ -5,7 +5,7 @@ export default function Video() {
 
 
   return (
-    <section id="amenities" className="py-20 bg-gradient-to-br from-[#ffebd6] to-[#f5d5a8]">
+    <section id="video" className="py-20 bg-gradient-to-br from-[#ffebd6] to-[#f5d5a8]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">

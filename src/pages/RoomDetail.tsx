@@ -24,19 +24,19 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const roomsData = {
-  "ocean-view-suite": {
+  "shoreline-room-no-1": {
     id: 1,
-    name: "Ocean View Suite",
-    price: 14950,
+    name: "Shoreline Room No.1",
+    price: 3600,
     size: "45 sqm",
     guests: 2,
     beds: "1 King Bed",
     baths: 1,
     images: [
-      "bg-gradient-to-br from-[#ffebd6] to-[#f5d5a8]",
-      "bg-gradient-to-br from-[#f5d5a8] to-[#ffebd6]",
-      "bg-gradient-to-br from-[#ffebd6] via-[#f5d5a8] to-[#ffebd6]",
-      "bg-gradient-to-br from-[#f5d5a8] via-[#ffebd6] to-[#f5d5a8]",
+      `bg-[url('/shoreline/1.jpg')] bg-cover bg-center`,
+      `bg-[url('/shoreline/2.jpg')] bg-cover bg-center`,
+      `bg-[url('/shoreline/3.jpg')] bg-cover bg-center`,
+      `bg-[url('/shoreline/4.jpg')] bg-cover bg-center`
     ],
     description:
       "Indulge in luxury with our Ocean View Suite, featuring panoramic views of the crystal-clear waters and pristine beaches. This elegantly appointed suite offers a perfect blend of comfort and sophistication, with a private balcony where you can enjoy breathtaking sunrises and sunsets.",
@@ -59,19 +59,19 @@ const roomsData = {
       { icon: Car, name: "Valet Parking" },
     ],
   },
-  "beach-villa": {
+  "family-room-no-1": {
     id: 2,
-    name: "Beach Villa",
-    price: 599,
+    name: "Family Room No.1",
+    price: 6600,
     size: "120 sqm",
     guests: 4,
     beds: "2 King Beds",
     baths: 2,
     images: [
-      "bg-gradient-to-br from-[#f5d5a8] to-[#ffebd6]",
-      "bg-gradient-to-br from-[#ffebd6] to-[#f5d5a8]",
-      "bg-gradient-to-br from-[#f5d5a8] via-[#ffebd6] to-[#f5d5a8]",
-      "bg-gradient-to-br from-[#ffebd6] via-[#f5d5a8] to-[#ffebd6]",
+      `bg-[url('/family/1.jpg')] bg-cover bg-center`,
+      `bg-[url('/family/2.jpg')] bg-cover bg-center`,
+      `bg-[url('/family/3.jpg')] bg-cover bg-center`,
+      `bg-[url('/family/4.jpg')] bg-cover bg-center`
     ],
     description:
       "Experience ultimate luxury in our exclusive Beach Villa with direct beach access and private pool. This spacious villa features two bedrooms, a fully equipped kitchen, and a private garden, making it perfect for families or couples seeking privacy and exclusivity.",
@@ -94,19 +94,229 @@ const roomsData = {
       { icon: Wifi, name: "Free WiFi" },
     ],
   },
-  "deluxe-room": {
+  "deluxe-room-no-1": {
     id: 3,
-    name: "Deluxe Room",
-    price: 199,
+    name: "Deluxe Room No.1",
+    price: 3400,
     size: "35 sqm",
     guests: 2,
     beds: "1 Queen Bed",
     baths: 1,
     images: [
-      "bg-gradient-to-br from-[#ffebd6] via-[#f5d5a8] to-[#ffebd6]",
-      "bg-gradient-to-br from-[#f5d5a8] to-[#ffebd6]",
-      "bg-gradient-to-br from-[#ffebd6] to-[#f5d5a8]",
-      "bg-gradient-to-br from-[#f5d5a8] via-[#ffebd6] to-[#f5d5a8]",
+      `bg-[url('/deluxe/1.jpg')] bg-cover bg-center`,
+      `bg-[url('/deluxe/2.jpg')] bg-cover bg-center`,
+      `bg-[url('/deluxe/3.jpg')] bg-cover bg-center`,
+      `bg-[url('/deluxe/4.jpg')] bg-cover bg-center`
+    ],
+    description:
+      "Our Deluxe Room offers comfort and elegance with beautiful garden views. Thoughtfully designed with modern amenities and warm tropical decor, this room provides a peaceful retreat after a day of beach activities and resort exploration.",
+    features: [
+      "Garden Views",
+      "Queen Size Bed",
+      "Modern Bathroom",
+      "Work Desk",
+      "Coffee/Tea Maker",
+      "High-Speed WiFi",
+      "Air Conditioning",
+      "Safe Deposit Box",
+      "Flat Screen TV",
+      "Daily Housekeeping",
+    ],
+    amenities: [
+      { icon: Coffee, name: "Coffee Maker" },
+      { icon: Wifi, name: "Free WiFi" },
+      { icon: Dumbbell, name: "Gym Access" },
+      { icon: Car, name: "Valet Parking" },
+    ],
+  },
+  "shoreline-room-no-2": {
+    id: 4,
+    name: "Shoreline Room No.2",
+    price: 3600,
+    size: "45 sqm",
+    guests: 2,
+    beds: "1 King Bed",
+    baths: 1,
+    images: [
+      `bg-[url('/shoreline/5.jpg')] bg-cover bg-center`,
+      `bg-[url('/shoreline/6.jpg')] bg-cover bg-center`,
+      `bg-[url('/shoreline/7.jpg')] bg-cover bg-center`,
+      `bg-[url('/shoreline/8.jpg')] bg-cover bg-center`
+    ],
+    description:
+      "Indulge in luxury with our Ocean View Suite, featuring panoramic views of the crystal-clear waters and pristine beaches. This elegantly appointed suite offers a perfect blend of comfort and sophistication, with a private balcony where you can enjoy breathtaking sunrises and sunsets.",
+    features: [
+      "Panoramic Ocean Views",
+      "Private Balcony",
+      "King Size Bed",
+      "Marble Bathroom",
+      "Mini Bar",
+      "High-Speed WiFi",
+      "24/7 Room Service",
+      "Air Conditioning",
+      "Safe Deposit Box",
+      "Flat Screen TV",
+    ],
+    amenities: [
+      { icon: Waves, name: "Ocean View" },
+      { icon: Wifi, name: "Free WiFi" },
+      { icon: Coffee, name: "Mini Bar" },
+      { icon: Car, name: "Valet Parking" },
+    ],
+  },
+    "family-room-no-2": {
+    id: 5,
+    name: "Family Room No.2",
+    price: 6600,
+    size: "120 sqm",
+    guests: 4,
+    beds: "2 King Beds",
+    baths: 2,
+    images: [
+      `bg-[url('/family/5.jpg')] bg-cover bg-center`,
+      `bg-[url('/family/2.jpg')] bg-cover bg-center`,
+      `bg-[url('/family/3.jpg')] bg-cover bg-center`,
+      `bg-[url('/family/4.jpg')] bg-cover bg-center`
+    ],
+    description:
+      "Experience ultimate luxury in our exclusive Beach Villa with direct beach access and private pool. This spacious villa features two bedrooms, a fully equipped kitchen, and a private garden, making it perfect for families or couples seeking privacy and exclusivity.",
+    features: [
+      "Direct Beach Access",
+      "Private Swimming Pool",
+      "Full Kitchen",
+      "Private Garden",
+      "Two Bedrooms",
+      "Living Room",
+      "Dining Area",
+      "BBQ Facilities",
+      "Outdoor Shower",
+      "Beach Chairs & Umbrellas",
+    ],
+    amenities: [
+      { icon: Waves, name: "Private Beach" },
+      { icon: Utensils, name: "Full Kitchen" },
+      { icon: Heart, name: "Private Pool" },
+      { icon: Wifi, name: "Free WiFi" },
+    ],
+  },
+  "deluxe-room-no-2": {
+    id: 6,
+    name: "Deluxe Room No.2",
+    price: 3400,
+    size: "35 sqm",
+    guests: 2,
+    beds: "1 Queen Bed",
+    baths: 1,
+    images: [
+      `bg-[url('/deluxe/5.jpg')] bg-cover bg-center`,
+      `bg-[url('/deluxe/2.jpg')] bg-cover bg-center`,
+      `bg-[url('/deluxe/3.jpg')] bg-cover bg-center`,
+      `bg-[url('/deluxe/1.jpg')] bg-cover bg-center`
+    ],
+    description:
+      "Our Deluxe Room offers comfort and elegance with beautiful garden views. Thoughtfully designed with modern amenities and warm tropical decor, this room provides a peaceful retreat after a day of beach activities and resort exploration.",
+    features: [
+      "Garden Views",
+      "Queen Size Bed",
+      "Modern Bathroom",
+      "Work Desk",
+      "Coffee/Tea Maker",
+      "High-Speed WiFi",
+      "Air Conditioning",
+      "Safe Deposit Box",
+      "Flat Screen TV",
+      "Daily Housekeeping",
+    ],
+    amenities: [
+      { icon: Coffee, name: "Coffee Maker" },
+      { icon: Wifi, name: "Free WiFi" },
+      { icon: Dumbbell, name: "Gym Access" },
+      { icon: Car, name: "Valet Parking" },
+    ],
+  },
+  "shoreline-room-no-3": { 
+    id: 7,
+    name: "Shoreline Room No.3",
+    price: 3600,
+    size: "45 sqm",
+    guests: 2,
+    beds: "1 King Bed",
+    baths: 1,
+    images: [
+      `bg-[url('/shoreline/1.jpg')] bg-cover bg-center`,
+      `bg-[url('/shoreline/2.jpg')] bg-cover bg-center`,
+      `bg-[url('/shoreline/3.jpg')] bg-cover bg-center`,
+      `bg-[url('/shoreline/4.jpg')] bg-cover bg-center`
+    ],
+    description:
+      "Indulge in luxury with our Ocean View Suite, featuring panoramic views of the crystal-clear waters and pristine beaches. This elegantly appointed suite offers a perfect blend of comfort and sophistication, with a private balcony where you can enjoy breathtaking sunrises and sunsets.",
+    features: [
+      "Panoramic Ocean Views",
+      "Private Balcony",
+      "King Size Bed",
+      "Marble Bathroom",
+      "Mini Bar",
+      "High-Speed WiFi",
+      "24/7 Room Service",
+      "Air Conditioning",
+      "Safe Deposit Box",
+      "Flat Screen TV",
+    ],
+    amenities: [
+      { icon: Waves, name: "Ocean View" },
+      { icon: Wifi, name: "Free WiFi" },
+      { icon: Coffee, name: "Mini Bar" },
+      { icon: Car, name: "Valet Parking" },
+    ],
+  },
+    "family-room-no-3": {
+    id: 8,
+    name: "Family Room No.3",
+    price: 6600,
+    size: "120 sqm",
+    guests: 4,
+    beds: "2 King Beds",
+    baths: 2,
+    images: [
+      `bg-[url('/family/1.jpg')] bg-cover bg-center`,
+      `bg-[url('/family/2.jpg')] bg-cover bg-center`,
+      `bg-[url('/family/3.jpg')] bg-cover bg-center`,
+      `bg-[url('/family/4.jpg')] bg-cover bg-center`
+    ],
+    description:
+      "Experience ultimate luxury in our exclusive Beach Villa with direct beach access and private pool. This spacious villa features two bedrooms, a fully equipped kitchen, and a private garden, making it perfect for families or couples seeking privacy and exclusivity.",
+    features: [
+      "Direct Beach Access",
+      "Private Swimming Pool",
+      "Full Kitchen",
+      "Private Garden",
+      "Two Bedrooms",
+      "Living Room",
+      "Dining Area",
+      "BBQ Facilities",
+      "Outdoor Shower",
+      "Beach Chairs & Umbrellas",
+    ],
+    amenities: [
+      { icon: Waves, name: "Private Beach" },
+      { icon: Utensils, name: "Full Kitchen" },
+      { icon: Heart, name: "Private Pool" },
+      { icon: Wifi, name: "Free WiFi" },
+    ],
+  },
+  "deluxe-room-no-3": {
+    id: 9,
+    name: "Deluxe Room No.3",
+    price: 3400,
+    size: "35 sqm",
+    guests: 2,
+    beds: "1 Queen Bed",
+    baths: 1,
+    images: [
+      `bg-[url('/deluxe/1.jpg')] bg-cover bg-center`,
+      `bg-[url('/deluxe/2.jpg')] bg-cover bg-center`,
+      `bg-[url('/deluxe/3.jpg')] bg-cover bg-center`,
+      `bg-[url('/deluxe/4.jpg')] bg-cover bg-center`
     ],
     description:
       "Our Deluxe Room offers comfort and elegance with beautiful garden views. Thoughtfully designed with modern amenities and warm tropical decor, this room provides a peaceful retreat after a day of beach activities and resort exploration.",
@@ -210,7 +420,7 @@ export default function RoomDetail() {
             <div className="lg:text-right">
               <div className="inline-block bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 <div className="text-3xl font-bold text-[#252627] mb-2">
-                  ${room.price}
+                  ₱{room.price}
                   <span className="text-lg font-normal text-[#252627]/70">
                     /night
                   </span>
@@ -318,7 +528,7 @@ export default function RoomDetail() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="text-center p-4 bg-[#ffebd6]/30 rounded-lg">
                   <div className="text-2xl font-bold text-[#252627] mb-2">
-                    ${room.price}
+                    ₱{room.price}
                   </div>
                   <div className="text-[#252627]/70">per night</div>
                 </div>
