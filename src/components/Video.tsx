@@ -10,7 +10,7 @@ export default function Video() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-[#252627] mb-4">
-            Feature <span className="text-[#ec9909]">Video</span>
+            Featured <span className="text-[#ec9909]">Video</span>
           </h2>
           <p className="text-xl text-[#252627]/70 max-w-3xl mx-auto">
             Discover the vibrant lifestyle and top-notch amenities that make our community the perfect place to call home.

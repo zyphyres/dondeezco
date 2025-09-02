@@ -87,7 +87,7 @@ export default function Footer() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2024 DONDEEZCO Beach Resort. All rights reserved.
+              © 2025 DONDEEZCO Beach Resort. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-[#ec9909] transition-colors duration-300">Privacy Policy</a>
