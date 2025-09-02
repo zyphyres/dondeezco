@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-white to-[#ffebd6] bg-clip-text text-transparent">
-              DONDEEZCO
+              D<span className='text-3xl font-bold text-[#ec9909]'>O</span>NDEEZC<span className='text-3xl font-bold text-[#ec9909]'>O</span>
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Experience luxury and tranquility at our beachfront paradise. Where every moment becomes a cherished memory.
