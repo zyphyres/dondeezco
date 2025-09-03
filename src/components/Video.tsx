@@ -22,7 +22,7 @@ export default function Video() {
           <div className="w-full max-w-4xl aspect-w-16 aspect-h-9 shadow-lg rounded-lg overflow-hidden">
             <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                src="https://www.youtube.com/watch?v=YZynEr4f_Iw"
                 title="Community Amenities Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
