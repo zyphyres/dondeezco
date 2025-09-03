@@ -87,8 +87,8 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-[#ec9909] flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-white/80">
-                  <p>Paradise Island</p>
-                  <p>Philippines 1234</p>
+                  <p>Brgy. Dumahug, Siquijor</p>
+                  <p>Siquijor Island, Philippines</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
