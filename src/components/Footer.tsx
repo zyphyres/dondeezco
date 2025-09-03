@@ -1,98 +1,124 @@
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-gradient-to-br from-[#252627] to-[#1a1b1c] text-white">
-      {/* Main Footer Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer className="bg-[#252627] text-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Brand Section */}
-          <div className="lg:col-span-1">
-            <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-white to-[#ffebd6] bg-clip-text text-transparent">
-              D<span className='text-3xl font-bold text-[#ec9909]'>O</span>NDEEZC<span className='text-3xl font-bold text-[#ec9909]'>O</span>
-            </h3>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Experience luxury and tranquility at our beachfront paradise. Where every moment becomes a cherished memory.
+          
+          {/* Brand & Description */}
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-2">D<span className='text-2xl font-bold text-[#ec9909]'>O</span>NDEEZC<span className='text-2xl font-bold text-[#ec9909]'>O</span></h3>
+              <p className="text-[#ec9909] font-medium">Beach Resort</p>
+            </div>
+            <p className="text-white/80 text-sm leading-relaxed">
+              Experience paradise at DONDEEZCO Beach Resort, where luxury meets nature in perfect harmony. 
+              Create unforgettable memories in our tropical haven.
             </p>
             <div className="flex space-x-4">
-              <Button size="sm" variant="ghost" className="p-2 hover:bg-[#ec9909]/20 rounded-full text-[#ffebd6] hover:text-[#ec9909]">
+              <a href="#" className="text-white/60 hover:text-[#ec9909] transition-colors">
                 <Facebook size={20} />
-              </Button>
-              <Button size="sm" variant="ghost" className="p-2 hover:bg-[#ec9909]/20 rounded-full text-[#ffebd6] hover:text-[#ec9909]">
+              </a>
+              <a href="#" className="text-white/60 hover:text-[#ec9909] transition-colors">
                 <Instagram size={20} />
-              </Button>
-              <Button size="sm" variant="ghost" className="p-2 hover:bg-[#ec9909]/20 rounded-full text-[#ffebd6] hover:text-[#ec9909]">
+              </a>
+              <a href="#" className="text-white/60 hover:text-[#ec9909] transition-colors">
                 <Twitter size={20} />
-              </Button>
+              </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-semibold mb-6 text-[#ffebd6]">Quick Links</h4>
-            <ul className="space-y-3">
-              <li><a href="#home" className="text-gray-300 hover:text-[#ec9909] transition-colors duration-300">Home</a></li>
-              <li><a href="#rooms" className="text-gray-300 hover:text-[#ec9909] transition-colors duration-300">Rooms & Suites</a></li>
-              <li><a href="#amenities" className="text-gray-300 hover:text-[#ec9909] transition-colors duration-300">Amenities</a></li>
-              <li><a href="#dining" className="text-gray-300 hover:text-[#ec9909] transition-colors duration-300">Dining</a></li>
-              <li><a href="#spa" className="text-gray-300 hover:text-[#ec9909] transition-colors duration-300">Spa & Wellness</a></li>
-              <li><a href="#activities" className="text-gray-300 hover:text-[#ec9909] transition-colors duration-300">Activities</a></li>
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/" className="text-white/80 hover:text-[#ec9909] transition-colors text-sm">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/rooms" className="text-white/80 hover:text-[#ec9909] transition-colors text-sm">
+                  Rooms & Suites
+                </Link>
+              </li>
+              <li>
+                <Link to="/activities" className="text-white/80 hover:text-[#ec9909] transition-colors text-sm">
+                  Activities
+                </Link>
+              </li>
+              <li>
+                <Link to="/dining" className="text-white/80 hover:text-[#ec9909] transition-colors text-sm">
+                  Dining
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-white/80 hover:text-[#ec9909] transition-colors text-sm">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-white/80 hover:text-[#ec9909] transition-colors text-sm">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <ul className="space-y-2 text-sm text-white/80">
+              <li>• Room Service</li>
+              <li>• Spa & Wellness</li>
+              <li>• Water Sports</li>
+              <li>• Island Tours</li>
+              <li>• Airport Transfer</li>
+              <li>• Event Planning</li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-xl font-semibold mb-6 text-[#ffebd6]">Contact Us</h4>
-            <div className="space-y-4">
+            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+            <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin size={20} className="text-[#ec9909] mt-1 flex-shrink-0" />
-                <div>
-                  <p className="text-gray-300">Barangay Dumanhug</p>
-                  <p className="text-gray-300"> Siquijor Island, Siquijor, Philippines</p>
+                <MapPin className="w-5 h-5 text-[#ec9909] flex-shrink-0 mt-0.5" />
+                <div className="text-sm text-white/80">
+                  <p>Paradise Island</p>
+                  <p>Philippines 1234</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone size={20} className="text-[#ec9909] flex-shrink-0" />
-                <p className="text-gray-300">+63 (912) 123-4567</p>
+                <Phone className="w-5 h-5 text-[#ec9909] flex-shrink-0" />
+                <span className="text-sm text-white/80">+63 123 456 7890</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail size={20} className="text-[#ec9909] flex-shrink-0" />
-                <p className="text-gray-300">info@dondeezco.com</p>
+                <Mail className="w-5 h-5 text-[#ec9909] flex-shrink-0" />
+                <span className="text-sm text-white/80">info@dondeezco.com</span>
               </div>
-            </div>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h4 className="text-xl font-semibold mb-6 text-[#ffebd6]">Stay Updated</h4>
-            <p className="text-gray-300 mb-4">Subscribe to receive exclusive offers and resort updates.</p>
-            <div className="space-y-3">
-              <Input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="bg-[#ffebd6]/10 border-[#ffebd6]/20 text-white placeholder:text-gray-400 focus:border-[#ec9909]"
-              />
-              <Button className="w-full bg-[#ec9909] hover:bg-[#d88708] text-white font-semibold rounded-full transition-all duration-300">
-                Subscribe
-              </Button>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-[#ffebd6]/10">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        {/* Bottom Section */}
+        <div className="border-t border-white/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm">
-              © 2025 DONDEEZCO Beach Resort. All rights reserved.
-            </p>
-            <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-[#ec9909] transition-colors duration-300">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-[#ec9909] transition-colors duration-300">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-[#ec9909] transition-colors duration-300">Cookie Policy</a>
+            <div className="text-sm text-white/60">
+              © 2024 DONDEEZCO Beach Resort. All rights reserved.
+            </div>
+            <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
+              <Link to="/terms-of-service" className="text-white/60 hover:text-[#ec9909] transition-colors">
+                Terms of Service
+              </Link>
+              <Link to="/privacy-policy" className="text-white/60 hover:text-[#ec9909] transition-colors">
+                Privacy Policy
+              </Link>
+              <Link to="/cookie-policy" className="text-white/60 hover:text-[#ec9909] transition-colors">
+                Cookie Policy
+              </Link>
             </div>
           </div>
         </div>

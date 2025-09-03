@@ -1,6 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Star, Quote } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Testimonials() {
   const testimonials = [
@@ -139,9 +140,12 @@ export default function Testimonials() {
             <h3 className="text-2xl font-bold mb-2">Ready to Create Your Own Story?</h3>
             <p className="mb-4 opacity-90">Join hundreds of satisfied guests and experience paradise</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/rooms">
               <button className="bg-white text-[#ec9909] font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300">
                 Book Your Stay
               </button>
+              </Link>
+
               <button className="border-2 border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-[#ec9909] transition-all duration-300">
                 View All Reviews
               </button>
