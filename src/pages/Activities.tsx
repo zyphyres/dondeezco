@@ -200,7 +200,7 @@ export default function Activities() {
             <Button className="bg-white text-[#ec9909] font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300">
               View Packages
             </Button>
-            <Button variant="outline" className="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-[#ec9909] transition-all duration-300">
+            <Button variant="outline" className="border-2 border-white text-[#ec9909] font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-[#ec9909] transition-all duration-300">
               Contact Us
             </Button>
           </div>
