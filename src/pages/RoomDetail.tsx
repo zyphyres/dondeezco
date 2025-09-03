@@ -344,7 +344,7 @@ const roomsData = {
 export default function RoomDetail() {
   const { roomId } = useParams();
   const room = roomsData[roomId as keyof typeof roomsData];
-
+  
   if (!room) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#ffebd6]">
@@ -352,9 +352,9 @@ export default function RoomDetail() {
           <h1 className="text-4xl font-bold text-[#252627] mb-4">
             Room Not Found
           </h1>
-          <Link to="/">
+          <Link to="/rooms">
             <Button className="bg-[#ec9909] hover:bg-[#d88708] text-white">
-              Back to Home
+              Back to Rooms
             </Button>
           </Link>
         </div>
@@ -371,7 +371,7 @@ export default function RoomDetail() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center mb-6">
             <Link
-              to="/allrooms"
+              to="/rooms"
               className="flex items-center text-[#252627] hover:text-[#ec9909] transition-colors duration-300"
             >
               <ArrowLeft size={20} className="mr-2" />

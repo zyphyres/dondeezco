@@ -287,7 +287,7 @@ export default function AllRooms() {
 
                   {/* Buttons */}
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <Link to={`/room/${room.slug}`} className="flex-1">
+                    <Link to={`/rooms/${room.slug}`} className="flex-1">
                       <Button variant="outline" className="w-full border-2 border-[#ec9909] text-[#ec9909] hover:bg-[#ec9909] hover:text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105">
                         View Details
                       </Button>

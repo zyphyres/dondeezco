@@ -53,7 +53,7 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">
-          <Link to="/allrooms">
+          <Link to="/rooms">
           <Button size="lg" style={{ width: "230px"}} className="bg-[#ec9909] w hover:bg-[#d88708] text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl">
             <Calendar className="mr-2" size={20} />
             Book Your Stay
